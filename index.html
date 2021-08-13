@@ -8,14 +8,16 @@
         <h1>Multiplication Table</h1>
         <script>
             // Se preferir, utilize o script em um arquivo .js separado.
-            let x = [];
-                for (let i = 0; i < 11; i++) {
+            
+            function tabelademultiplicação(n){
+                   let x = [];
+                for (let i = 0; i <= n; i++) {
                     x[i] = []
-                    for (let k = 0; k < 11; k++){
+                    for (let k = 0; k <= n; k++){
                      x[i][k] = i * k
 
-                }}
-                  console.table(x)
+                }} return x}
+                  console.table(tabelademultiplicação(13))
             
         </script>
     </body>
